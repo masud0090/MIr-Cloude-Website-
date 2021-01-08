@@ -1,0 +1,291 @@
+.cloud {
+  color: black !important;
+}
+
+.fontview {
+  font-size: 30px;
+}
+
+.secondpart {
+  background-color: #edebf8;
+}
+
+#service {
+ margin-left: 38px;
+}
+#service a {
+  color: black;
+  font-weight: bold;
+}
+
+
+
+.threepart {
+  background-color: #ffffff;
+}
+
+
+
+.fourpart {
+  background-color: #e0eee1;
+}
+
+.count-title {
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.fivepart {
+  background-color: #f4fbf4;
+}
+
+.fivepart-padding {
+  padding: 40px;
+  text-align: justify;
+  align-items: center;
+}
+
+.fourpartpic1 {
+  display: flex;
+}
+
+.fourpartpic2 {
+  display: flex;
+}
+
+.fourpartview {
+  
+  text-align: right;
+  font-size: 40px;
+  font-family: "Arial";
+  
+}
+
+.sixpart {
+  background-color: #f0f0f0;
+}
+
+.sixpartview p {
+  font-size: 30px;
+}
+.sixpartview {
+  text-align: right;
+}
+
+.sevenpart {
+  background-color: #fdefef;
+}
+
+#news {
+  font-size: 17px;
+  color: black;
+}
+#date {
+  font-size: 18px;
+}
+#time {
+  font-size: 12px;
+  margin-top: -20px;
+}
+
+#fontaswm{
+  color: #4f7fe1;
+  font-size: 25px;
+}
+
+.section-padding {
+  padding: 50px;
+}
+.owl-dots {
+  text-align: center;
+}
+.owl-dot {
+  padding: 10px;
+  display: inline-block;
+  height: 11px !important;
+  width: 11px !important;
+  background-color: #878787 !important;
+  opacity: 0.8;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+.owl-dot.active {
+  background-color: #000 !important;
+}
+
+.section-a {
+  background-color: #d1d3e2;
+}
+.section-a-padding {
+  padding: 20px;
+}
+.section-eight {
+  background-color: #393e42;
+  padding: 50px;
+  color: #bcbdc1;
+}
+.section-eight a {
+  color: #bcbdc1;
+}
+.section-eight h5{
+  font-size: 16px;
+  font-weight: bolder;
+}
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #d1d3e2;
+  margin-left: 10px;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url("searchicon.png");
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menu-inline {
+  display: flex;
+}
+.cloud-icon {
+  margin: 4px 50px;
+}
+.sub-menubar {
+  margin-left: auto;
+}
+
+.car-space {
+  padding: 30px;
+  margin: 8px 150px;
+}
+h1 {
+  color: #364598;
+}
+.sec-a-butn {
+  background-color: #364598;
+  color: #fff;
+  border-color: #364598;
+  padding: 5px;
+}
+.sec-a-butn:hover {
+  color: #fff;
+  background-color: #364598;
+  border-color: #364598;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 8px;
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 3px;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 20px;
+}
+.facebook {
+  color: white;
+}
+
+.twitter {
+  color: white;
+}
+
+.linkedin {
+  color: white;
+}
+
+.youtube {
+  color: white;
+}
+.footer-inline {
+  display: flex;
+  margin-top: -10px;
+}
+.footer-inline h5 {
+  margin-left: 15px;
+}
+.text-dec {
+  text-align: justify;
+}
+.footer-line {
+  display: flex;
+}
+.footer-line-left {
+  margin-left: auto;
+}
+.contact-align {
+  align-items: left;
+}
+.contact-align p {
+  font-size: small;
+}
+
+
+@media only screen and (max-width:568px){
+  
+  
+}

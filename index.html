@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+
+    <title>project</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="section-a">
+          <div class="row section-a-padding">
+            <div>
+              <div class="menu-inline">
+                <div>
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">
+                      <div class="menu-icon"></div>
+                      <div class="menu-icon"></div>
+                      <div class="menu-icon"></div>
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <input
+                        type="text"
+                        placeholder="Search.."
+                        id="myInput"
+                        onkeyup="filterFunction()"
+                      />
+                    </div>
+
+                    <script>
+                      /* When the user clicks on the button,
+                              toggle between hiding and showing the dropdown content */
+                      function myFunction() {
+                        document
+                          .getElementById("myDropdown")
+                          .classList.toggle("show");
+                      }
+
+                      function filterFunction() {
+                        var input, filter, ul, li, a, i;
+                        input = document.getElementById("myInput");
+                        filter = input.value.toUpperCase();
+                        div = document.getElementById("myDropdown");
+                        a = div.getElementsByTagName("a");
+                        for (i = 0; i < a.length; i++) {
+                          txtValue = a[i].textContent || a[i].innerText;
+                          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            a[i].style.display = "";
+                          } else {
+                            a[i].style.display = "none";
+                          }
+                        }
+                      }
+                    </script>
+                  </div>
+                </div>
+
+                <div class="cloud-icon">
+                  <i
+                    class="fa fa-cloud"
+                    style="font-size: 50px"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+
+                <div class="sub-menubar">
+                  <div class="dropdown">
+                    <button class="dropbtn">
+                      <i class="fa fa-minus" aria-hidden="true"></i> ENTERPRISE
+                      CLOUD
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Softchoice</a>
+                      <a href="#">Prolifics</a>
+                      <a href="#">Cloudways</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn">
+                      <i class="fa fa-minus" aria-hidden="true"></i> DATA CENTER
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Adentro</a>
+                      <a href="#">Altus</a>
+                      <a href="#">Airespring</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn">
+                      <i class="fa fa-minus" aria-hidden="true"></i> COMPANY
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">IBM Cloud</a>
+                      <a href="#">V Mware</a>
+                      <a href="#">Dropbox</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide car-space"
+                  data-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row align-items-center">
+                        <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6">
+                          <h1>
+                            Mir is the name of trust in Technology sector in
+                            Bangladesh
+                          </h1>
+                          <div>
+                            <p style="text-align: justify; color: #22364b">
+                              We are operating enterprise grade Data center in
+                              multiple locations inside Bangladesh more than a
+                              decade.
+                            </p>
+                          </div>
+                          <button type="button" class="sec-a-butn">
+                            Get Started
+                          </button>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                          <img
+                            class="img-fluid"
+                            src="image/secondpic.png"
+                            alt="Chania"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row align-items-center">
+                        <div class="col-lg-7 col-md-7 col-sm-8 col-xs-8">
+                          <h1>
+                            Mir is the name of trust in Technology sector in
+                            Bangladesh
+                          </h1>
+                          <div>
+                            <p style="text-align: justify; color: #22364b">
+                              We are operating enterprise grade Data center in
+                              multiple locations inside Bangladesh more than a
+                              decade.
+                            </p>
+                          </div>
+                          <button type="button" class="sec-a-butn">
+                            Get Started
+                          </button>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                          <img
+                            class="img-fluid"
+                            src="image/secondpic.png"
+                            alt="Chania"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row align-items-center">
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                          <h1>
+                            Mir is the name of trust in Technology sector in
+                            Bangladesh
+                          </h1>
+                          <div>
+                            <p style="text-align: justify; color: #22364b">
+                              We are operating enterprise grade Data center in
+                              multiple locations inside Bangladesh more than a
+                              decade.
+                            </p>
+                          </div>
+                          <button type="button" class="sec-a-butn">
+                            Get Started
+                          </button>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                          <img
+                            class="img-fluid"
+                            src="image/secondpic.png"
+                            alt="Chania"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="icon-bar">
+              <a href="#" class="facebook"
+                ><i class="fa fa-facebook-square"></i
+              ></a>
+              <a href="#" class="twitter"
+                ><i class="fa fa-twitter-square"></i
+              ></a>
+              <a href="#" class="linkedin"
+                ><i class="fa fa-linkedin-square"></i
+              ></a>
+              <a href="#" class="youtube"
+                ><i class="fa fa-youtube-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-3">
+            <a href=""><h5 style="margin-left: 50px">UPCOMING EVENTS :</h5></a>
+          </div>
+
+          <div class="col-lg-9 col-md-9">
+            <marquee
+              direction="left"
+              onmouseover="this.stop();"
+              onmouseout="this.start();"
+              scrollamount="2"
+              scrolldelay="50"
+              style="color: red"
+            >
+              Mir Cloud in BASIS Softexpo 2020
+            </marquee>
+          </div>
+        </div>
+        <div class="secondpart">
+          <div class="row" style="padding: 25px">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="view1">
+              <div class="b">
+                <i class="fal fa-clouds" id="fontaswm"></i>
+                <b>CLOUD COMPUTER</b> <br />
+                <br />
+                <div class="cloud">
+                  <p id="service">
+                    <a href="#">Cloud Server</a> <br />
+                    <a href="#">Data Security</a> <br />
+                    <a href="#">Cloud Storage</a> <br />
+                    <a href="#">Desaster Recovery</a>
+                  </p>
+                  <br />
+                  <div class="pic">
+                    <img
+                      src="image/one.jpg"
+                      class="img-fluid"
+                      alt="Chania"
+                      width="200px"
+                      height="200px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <i class="fal fa-database" id="fontaswm"></i> <b>DATA CENTER</b>
+              <br />
+              <br />
+              <div class="cloud">
+                <p id="service">
+                  <a href="#">Colocation Service</a> <br />
+                  <a href="#">Data Security</a> <br />
+                  <a href="#">Cloud Storage</a> <br />
+                  <a href="#">Desaster Recovery</a>
+                </p>
+                <br />
+                <div class="pic">
+                  <img
+                    src="image/two.jpg"
+                    class="img-fluid"
+                    alt="Chania"
+                    width="200px"
+                    height="200px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="view1">
+              <i class="far fa-cogs" id="fontaswm"></i> <b>OTHER SERVICES</b>
+              <br />
+              <br />
+              <div class="cloud">
+                <p id="service">
+                  <a href="#">Cloud Server</a> <br />
+                  <a href="#">Data Security</a> <br />
+                  <a href="#">Cloud Storage</a> <br />
+                  <a href="#">Desaster Recovery</a>
+                </p>
+                <br />
+                <div class="pic">
+                  <img
+                    src="image/three.jpg"
+                    class="img-fluid"
+                    alt="Chania"
+                    width="200px"
+                    height="200px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <div class="fontview">
+                <p>WHAT WE DO</p>
+              </div>
+              <p>
+                We are Providing Cloud,DataCenter and IT Enabled Sservice.
+                Deploy your infrastructure on your fully redundatn for
+                infrastructure on a teach our fully deploy your service
+                infrastructure of our fully redundant.
+              </p>
+              <button type="button" class="sec-a-butn">View More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="threepaart">
+          <div class="row" style="padding: 50px">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <div class="fontview">
+                <p>CLOUD FEATURE</p>
+              </div>
+              <p>
+                We are Providing Cloud,Data and that center and IT Enabled
+                Services.Deploy your infrastructure and get hassle free
+              </p>
+              <button type="button" class="sec-a-butn">View More</button>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <b><i class="far fa-server" id="fontaswm"></i> CLOUD SERVER</b>
+              <br />
+              <br />
+              <div class="cloud">
+                <p>
+                  One line description about the cloud server details one liner
+                  description
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <b
+                ><i class="far fa-boxes-alt" id="fontaswm"></i> CLOUD STORAGE</b
+              >
+              <br />
+              <br />
+              <div class="cloud">
+                <p>
+                  One line description about the cloud server details one liner
+                  description
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <i class="fal fa-shield-alt" id="fontaswm"></i> <b>SECURITY</b>
+              <br />
+              <br />
+              <div class="cloud">
+                <p>
+                  One line description about the cloud server details one liner
+                  description
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fourpart">
+          <div class="row" style="padding: 50px">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+              <div class="fourpartpic1">
+                <div>
+                  <img
+                    class="img-fluid"
+                    src="image/logo/a.png"
+                    alt="Chania"
+                    width="200px"
+                    height="200px"
+                  />
+                </div>
+                <div style="margin-left: 50px; margin-top: -70px">
+                  <img
+                    class="img-fluid"
+                    src="image/four.jpg"
+                    alt="Chania"
+                    width="440px"
+                    height="350px"
+                  />
+                </div>
+              </div>
+
+              <div class="fourpartpic2">
+                <div style="margin-bottom: -70px">
+                  <img
+                    class="img-fluid"
+                    src="image/five.jpg"
+                    alt="Chania"
+                    width="440px"
+                    height="350px"
+                  />
+                </div>
+                <div class="b" style="margin-left: 50px; margin-top: 10px">
+                  <img
+                    class="img-fluid"
+                    src="image/logo/b.png"
+                    alt="Chania"
+                    width="200px"
+                    height="200px"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="fourpartview">
+                <div class="container">
+                  <div class="single-counter">
+                    <p class="Counter_up">
+                      <span class="counter">99.9999</span>%
+                    </p>
+                    <p id="time">Uptime SLA</p>
+                  </div>
+
+                  <div>
+                    <p>SECURED</p>
+                    <p id="time">Secured infrastructure</p>
+                  </div>
+                  <div>
+                    <p>FLEXIBLE</p>
+                    <p id="time">On Demand Capacity</p>
+                  </div>
+                  <div>
+                    <p>RELIABLE</p>
+                    <p id="time">Recognition in Market</p>
+                  </div>
+
+                  <div class="single-counter">
+                    <p class="Counter_up"><span class="counter">500</span>+</p>
+                    <p id="time">Vertual Machines</p>
+                  </div>
+
+                  <script src="js/jquery.main.js"></script>
+                  <script src="js/waypoints.min.js"></script>
+                  <script src="js/jquery.counterup.min.js"></script>
+
+                  <script>
+                    jQuery(document).ready(function ($) {
+                      $(".counter").counterUp({
+                        delay: 1,
+                        time: 300,
+                      });
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="fivepart">
+          <div class="container fivepart-padding">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <div class="fontview">
+                  <p>WE WORK WITH</p>
+                </div>
+                <p>
+                  We are Providing Cloud,Data Center, Colocation & IT Enabled
+                  Sservice. Deploy your infrastructure on your fully redundatn
+                  for infrastructure on a teach our fully deploy your service
+                  infrastructure of our fully redundant.
+                </p>
+                <button type="button" class="sec-a-butn">View More</button>
+              </div>
+
+              <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                <div class="brand-carousel section-padding owl-carousel">
+                  <div class="single-logo">
+                    <div class="container">
+                      <img
+                        src="image/logo/intel.png"
+                        class="rounded-circle"
+                        alt="Cinque Terre"
+                        width="170"
+                        height="80"
+                      />
+                    </div>
+                  </div>
+                  <div class="single-logo">
+                    <div class="container">
+                      <img
+                        src="image/logo/huawei.png"
+                        class="rounded-circle"
+                        alt="Cinque Terre"
+                        width="170"
+                        height="80"
+                      />
+                    </div>
+                  </div>
+                  <div class="single-logo">
+                    <div class="container">
+                      <img
+                        src="image/logo/rad.jpg"
+                        class="rounded-circle"
+                        alt="Cinque Terre"
+                        width="170"
+                        height="80"
+                      />
+                    </div>
+                  </div>
+                  <div class="single-logo">
+                    <div class="container">
+                      <img
+                        src="image/logo/a.png"
+                        class="rounded-circle"
+                        alt="Cinque Terre"
+                        width="170"
+                        height="80"
+                      />
+                    </div>
+                  </div>
+                  <div class="single-logo">
+                    <div class="container">
+                      <img
+                        src="image/logo/b.png"
+                        class="rounded-circle"
+                        alt="Cinque Terre"
+                        width="170"
+                        height="80"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="single-logo">
+                    <div class="container">
+                      <img
+                        src="image/logo/ei.png"
+                        class="rounded-circle"
+                        alt="Cinque Terre"
+                        width="200"
+                        height="80"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sixpart">
+          <div class="row" style="padding: 50px">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+              <div class="fourpartpic1">
+                <div>
+                  <img
+                    class="img-fluid"
+                    src="image/nine.jpg"
+                    alt="Chania"
+                    width="300px"
+                    height="200px"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="img-fluid"
+                    src="image/six.jpg"
+                    alt="Chania"
+                    width="300px"
+                    height="200px"
+                  />
+                </div>
+              </div>
+
+              <div class="fourpartpic2">
+                <div>
+                  <img
+                    class="img-fluid"
+                    src="image/eight.jpg"
+                    alt="Chania"
+                    width="300px"
+                    height="200px"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="img-fluid"
+                    src="image/seven.jpg"
+                    alt="Chania"
+                    width="300px"
+                    height="200px"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="sixpartview">
+                <p>WHO WE SERVE</p>
+              </div>
+              <p style="text-align: justify">
+                We are Providing Cloud,Data Center, Colocation & IT Enabled
+                Sservice. Deploy your infrastructure on your fully redundatn for
+                infrastructure on a teach our fully deploy your
+              </p>
+
+              <div class="sixpartview">
+                <p>
+                  FINANCE <br />
+                  TELECOME <br />
+                  HEALTH CARE <br />
+                  SOFTWARE
+                </p>
+                <button type="button" class="sec-a-butn">View More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sevenpart" style="padding: 50px">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <div class="fontview">
+                <p>LATEST NEWS</p>
+              </div>
+              <a href="https://skillhutch.com/" id="news"
+                ><u>https://skillhutch.com....</u></a
+              >
+              <a href="https://skillhutch.com/" id="news"
+                ><u>https://skillhutch.com...</u></a
+              >
+              <a href="https://skillhutch.com/" id="news"
+                ><u>https://skillhutch.com</u></a
+              >
+              <br />
+              <br />
+
+              <button type="button" class="sec-a-butn">Explore</button>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="view3">
+              <div>
+                <img
+                  src="image/ten.jpg"
+                  alt="Cinque Terre"
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <br />
+              <a href="#" id="news"><b>Cloud Digital transformation</b></a>
+              <p id="date">September 16, 2020</p>
+              <p id="time">6 Minute Read</p>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="view3">
+              <div>
+                <img
+                  src="image/eleven.jpg"
+                  alt="Cinque Terre"
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <br />
+              <a href="#" id="news"><b>Coloasia now Tier 3 Certified</b></a>
+              <p id="date">Julay 16, 2020</p>
+              <p id="time">6 Minute Read</p>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="view3">
+              <div>
+                <img
+                  src="image/twlve.jpg"
+                  alt="Cinque Terre"
+                  width="250px"
+                  height="200px"
+                />
+              </div>
+              <br />
+              <a href="#" id="news"><b>Mir Cloud help Digital transf</b></a>
+              <p id="date">Julay 16, 2020</p>
+              <p id="time">6 Minute Read</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-eight">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-dec">
+              <div class="footer-inline">
+                <div>
+                  <i
+                    class="fa fa-cloud"
+                    style="font-size: 35px"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <div><h3>Mir Cloud</h3></div>
+              </div>
+              <p>
+                Clouds trends has been changing rapidly as the requirements
+                evolving with the advancement of technology rapidas the
+                requirements evolving with the advancemnet of technology
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+              <div><h5>COMPANY</h5></div>
+
+              <div>
+                <a href="">Mir Cloud</a><br />
+                <a href="">Management</a><br />
+                <a href="">Join Us</a><br />
+                <a href="">Documents</a><br />
+                <a href="">Policy</a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+              <div><h5>CONTACT DETAILS</h5></div>
+              <div>
+                <a href="">Enterprise Cloud</a><br />
+                <a href="">Data center</a><br />
+                <a href="">Services</a><br />
+                <a href="">Features</a><br />
+                <a href="">Value Added Service</a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+              <div><h5>BUSINESS</h5></div>
+              <div>
+                <a href="">Coloasia</a><br />
+                <a href="">Mir Akhter Hossain</a><br />
+                <a href="">Mir Ceramics</a><br />
+                <a href="">Mir Telecom</a><br />
+                <a href="">Mir Net</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <div>
+                <div class="text-right"><h5>CONTACT DETAILS</h5></div>
+                <div class="text-right">
+                  <b>Mir Telecom Group</b> <br />
+                  <p>House-04, Road-21, Gulsan-1 Dhaka-1212, Baangladesh</p>
+                  <p>Contacts: +88 09601501500 <br />+88 01313446644</p>
+                  <p>Email: Sales@coloasiabd.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <hr style="border: 1px solid #505558" />
+              <div class="footer-line">
+                2020, Copyright @Coloasia Limited, Mir Tel Group.
+
+                <div class="footer-line-left">
+                  <a href="">Terms of Use </a> &nbsp;
+                  <a href="">Privacy Policy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="custom.js"></script>
+  </body>
+</html>
